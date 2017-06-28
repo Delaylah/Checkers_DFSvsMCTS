@@ -40,16 +40,16 @@ namespace CheckersBoard
             turn = "Black";
 
             // Dependencies
-            this.randomService = new RandomService();
+            this.randomService = new RandomService(123456789);
             this.listHelper = new ListHelpers(this.randomService);
 
-            var mctsRandom = new RandomService();
+            var mctsRandom = new RandomService(123456789);
 
             // Define algorithms
             this.algorithms = new Dictionary<Player, IAIAlgorithm>
             {
                 {Player.Black, new MctsAI(new ListHelpers(mctsRandom), mctsRandom)},
-                {Player.Red, new DfsAI(new ListHelpers(new RandomService()))}
+                {Player.Red, new DfsAI(new ListHelpers(new RandomService(123456789)))}
             };
 
             board = new CheckerBoard();
@@ -147,7 +147,7 @@ namespace CheckersBoard
 
                     stopwatch.Reset();
                     stopwatch.Start();
-                    var move = algorithms[currentPlayer].GetMove(board, currentPlayer);
+                    var move = algorithms[currentPlayer].GetMove(board, board.NextPlayer);
                     stopwatch.Stop();
 
                     if (move == null)
@@ -158,16 +158,13 @@ namespace CheckersBoard
 
                     Console.WriteLine($"Turn #{i++}; Player {currentPlayer}; ({move.piece1.Row}, {move.piece1.Column}) to ({move.piece2.Row}, {move.piece2.Column}); Elapsed: {stopwatch.ElapsedMilliseconds} ms");
 
-                    board.MakeMove(move, currentPlayer);
+                    board.MakeMove(move, board.NextPlayer);
                     DrawStates(board);
 
                     if (board.GetGameStatus() != GameStatuses.Running)
                         continue;
 
-                    if (currentPlayer == Player.Red)
-                        currentPlayer = Player.Black;
-                    else
-                        currentPlayer = Player.Red;
+                    currentPlayer = board.NextPlayer;
 
                     await Task.Delay(200);
                 }

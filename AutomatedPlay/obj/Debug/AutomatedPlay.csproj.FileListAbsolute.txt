@@ -1,14 +1,28 @@
-C:\Users\ajlas\Documents\GitHub\checkers\AutomatedPlay\bin\Debug\AutomatedPlay.exe.config
-C:\Users\ajlas\Documents\GitHub\checkers\AutomatedPlay\bin\Debug\Resources\black60p.png
-C:\Users\ajlas\Documents\GitHub\checkers\AutomatedPlay\bin\Debug\Resources\red60p_king.png
-C:\Users\ajlas\Documents\GitHub\checkers\AutomatedPlay\bin\Debug\Resources\black60p_king.png
-C:\Users\ajlas\Documents\GitHub\checkers\AutomatedPlay\bin\Debug\Resources\red60p.png
-C:\Users\ajlas\Documents\GitHub\checkers\AutomatedPlay\bin\Debug\AutomatedPlay.exe
-C:\Users\ajlas\Documents\GitHub\checkers\AutomatedPlay\bin\Debug\AutomatedPlay.pdb
-C:\Users\ajlas\Documents\GitHub\checkers\AutomatedPlay\bin\Debug\Checkers.exe
-C:\Users\ajlas\Documents\GitHub\checkers\AutomatedPlay\bin\Debug\Newtonsoft.Json.dll
-C:\Users\ajlas\Documents\GitHub\checkers\AutomatedPlay\bin\Debug\Checkers.pdb
-C:\Users\ajlas\Documents\GitHub\checkers\AutomatedPlay\bin\Debug\Newtonsoft.Json.xml
-C:\Users\ajlas\Documents\GitHub\checkers\AutomatedPlay\obj\Debug\AutomatedPlay.csprojResolveAssemblyReference.cache
-C:\Users\ajlas\Documents\GitHub\checkers\AutomatedPlay\obj\Debug\AutomatedPlay.exe
-C:\Users\ajlas\Documents\GitHub\checkers\AutomatedPlay\obj\Debug\AutomatedPlay.pdb
+C:\Unzipped\checkers-master\AutomatedPlay\bin\Debug\AutomatedPlay.exe.config
+C:\Unzipped\checkers-master\AutomatedPlay\bin\Debug\Resources\black60p.png
+C:\Unzipped\checkers-master\AutomatedPlay\bin\Debug\Resources\red60p_king.png
+C:\Unzipped\checkers-master\AutomatedPlay\bin\Debug\Resources\black60p_king.png
+C:\Unzipped\checkers-master\AutomatedPlay\bin\Debug\Resources\red60p.png
+C:\Unzipped\checkers-master\AutomatedPlay\bin\Debug\AutomatedPlay.exe
+C:\Unzipped\checkers-master\AutomatedPlay\bin\Debug\AutomatedPlay.pdb
+C:\Unzipped\checkers-master\AutomatedPlay\bin\Debug\Checkers.exe
+C:\Unzipped\checkers-master\AutomatedPlay\bin\Debug\Newtonsoft.Json.dll
+C:\Unzipped\checkers-master\AutomatedPlay\bin\Debug\Checkers.pdb
+C:\Unzipped\checkers-master\AutomatedPlay\bin\Debug\Newtonsoft.Json.xml
+C:\Unzipped\checkers-master\AutomatedPlay\obj\Debug\AutomatedPlay.csprojResolveAssemblyReference.cache
+C:\Unzipped\checkers-master\AutomatedPlay\obj\Debug\AutomatedPlay.exe
+C:\Unzipped\checkers-master\AutomatedPlay\obj\Debug\AutomatedPlay.pdb
+C:\Users\ajlas\Downloads\checkers-master (5)\AutomatedPlay\bin\Debug\AutomatedPlay.exe.config
+C:\Users\ajlas\Downloads\checkers-master (5)\AutomatedPlay\obj\Debug\AutomatedPlay.exe
+C:\Users\ajlas\Downloads\checkers-master (5)\AutomatedPlay\obj\Debug\AutomatedPlay.pdb
+C:\Users\ajlas\Downloads\checkers-master (5)\AutomatedPlay\bin\Debug\Resources\black60p.png
+C:\Users\ajlas\Downloads\checkers-master (5)\AutomatedPlay\bin\Debug\Resources\red60p_king.png
+C:\Users\ajlas\Downloads\checkers-master (5)\AutomatedPlay\bin\Debug\Resources\black60p_king.png
+C:\Users\ajlas\Downloads\checkers-master (5)\AutomatedPlay\bin\Debug\Resources\red60p.png
+C:\Users\ajlas\Downloads\checkers-master (5)\AutomatedPlay\bin\Debug\AutomatedPlay.exe
+C:\Users\ajlas\Downloads\checkers-master (5)\AutomatedPlay\bin\Debug\AutomatedPlay.pdb
+C:\Users\ajlas\Downloads\checkers-master (5)\AutomatedPlay\bin\Debug\Checkers.exe
+C:\Users\ajlas\Downloads\checkers-master (5)\AutomatedPlay\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ajlas\Downloads\checkers-master (5)\AutomatedPlay\bin\Debug\Checkers.pdb
+C:\Users\ajlas\Downloads\checkers-master (5)\AutomatedPlay\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ajlas\Downloads\checkers-master (5)\AutomatedPlay\obj\Debug\AutomatedPlay.csprojResolveAssemblyReference.cache

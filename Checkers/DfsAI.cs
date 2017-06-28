@@ -39,6 +39,9 @@ namespace CheckersBoard
             if (currentDepth >= MAX_DEPTH)
                 return;
 
+            if (currentBoard.GetGameStatus() != GameStatuses.Running)
+                return;
+
             IList<Move> allPossibleMoves = GetAvaliableMoves(currentBoard, currentBoard.NextPlayer);
 
             foreach (var move in allPossibleMoves)
@@ -75,7 +78,7 @@ namespace CheckersBoard
             if (root.Children == null || root.Children.Count() == 0)
                 return null;
 
-            var bestScore = new BestInTreeScore { Score = 0, Moves = new List<IList<Move>>() };
+            var bestScore = new BestInTreeScore { Score = Int32.MinValue, Moves = new List<IList<Move>>() };
             findBestMoveInTree(root, new List<Move>(), player, bestScore);
 
             // Save tree

@@ -12,7 +12,7 @@ namespace PerformanceTest
     {
         static void Main(string[] args)
         {
-            var sw = new Stopwatch();
+            /*var sw = new Stopwatch();
             sw.Start();
             for (int i = 0; i < 1000000; i++)
             {
@@ -20,8 +20,29 @@ namespace PerformanceTest
                 board.Clone();
             }
             sw.Stop();
-            Console.WriteLine($"Elapsed: {sw.Elapsed}");
+            Console.WriteLine($"Elapsed: {sw.Elapsed}");*/
+
+            checkMctsNoMoves();
             Console.ReadLine();
+        }
+
+        private static void checkMctsNoMoves()
+        {
+            var board = new CheckerBoard();
+            board.InitializeBoard();
+            board.Parse(@"EEEEECEE
+REEEEEEE
+EBEEEEEE
+EEBEEEEE
+EEEEEEEE
+EEEEEEEE
+EBEEEEEE
+EEEEEEEE
+", Player.Black);
+
+            var simpleMoves = board.GetSimpleMoves(Player.Black);
+            var jumpMoves = board.GetJumpMoves(Player.Black);
+
         }
     }
 }

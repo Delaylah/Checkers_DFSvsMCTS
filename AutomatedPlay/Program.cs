@@ -10,7 +10,7 @@ namespace AutomatedPlay
 {
     class Program
     {
-        private static int MATCHES_COUNT = 50 ;
+        private static int MATCHES_COUNT = 20;
         private static int MAX_TURNS_PER_MATCH = 200;
 
         private static IList<IAIAlgorithm> algorithms;
@@ -32,7 +32,6 @@ namespace AutomatedPlay
             };
 
 
-
             for (var i = 0; i < MATCHES_COUNT; i++)
             {
                 var shuffeledAlgorithms = algorithms.OrderBy(o => Guid.NewGuid()).ToArray();
@@ -42,7 +41,7 @@ namespace AutomatedPlay
                     { Player.Red, shuffeledAlgorithms[1] }
                 };
 
-                var resultDetails = PlayMatch(algorithmsByPlayers);
+                var resultDetails = PlayMatch(algorithmsByPlayers, i+1);
                 Console.WriteLine($"Match #{i + 1}, {resultDetails.Result}, {resultDetails.Duration}; {resultDetails.WinningAlgorithmType?.Name}");
 
                 // Results by color
@@ -77,7 +76,7 @@ namespace AutomatedPlay
             Console.ReadLine();
         }
 
-        private static ResultDetails PlayMatch(Dictionary<Player, IAIAlgorithm> algorithms)
+        private static ResultDetails PlayMatch(Dictionary<Player, IAIAlgorithm> algorithms, int matchNumber)
         {
             var board = new CheckerBoard();
             board.InitializeBoard();
@@ -97,7 +96,7 @@ namespace AutomatedPlay
                 if (move == null)
                     return new ResultDetails(MatchResult.NoMoreMoves, matchStopwatch.Elapsed);
 
-                Console.WriteLine($"\tTurn #{turns}; Player {board.NextPlayer}; ({move.piece1.Row}, {move.piece1.Column}) to ({move.piece2.Row}, {move.piece2.Column}); Elapsed: {stopwatch.ElapsedMilliseconds} ms");
+                Console.WriteLine($"\tTurn #{matchNumber}.{turns}; Player {board.NextPlayer}; ({move.piece1.Row}, {move.piece1.Column}) to ({move.piece2.Row}, {move.piece2.Column}); Elapsed: {stopwatch.ElapsedMilliseconds} ms");
 
                 board.MakeMove(move, board.NextPlayer);
 

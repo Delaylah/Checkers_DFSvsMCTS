@@ -1,0 +1,14 @@
+C:\Unzipped\checkers-master\PerformanceTest\bin\Debug\Resources\black60p.png
+C:\Unzipped\checkers-master\PerformanceTest\bin\Debug\Resources\red60p_king.png
+C:\Unzipped\checkers-master\PerformanceTest\bin\Debug\Resources\black60p_king.png
+C:\Unzipped\checkers-master\PerformanceTest\bin\Debug\Resources\red60p.png
+C:\Unzipped\checkers-master\PerformanceTest\bin\Debug\PerformanceTest.exe.config
+C:\Unzipped\checkers-master\PerformanceTest\bin\Debug\PerformanceTest.exe
+C:\Unzipped\checkers-master\PerformanceTest\bin\Debug\PerformanceTest.pdb
+C:\Unzipped\checkers-master\PerformanceTest\bin\Debug\Checkers.exe
+C:\Unzipped\checkers-master\PerformanceTest\bin\Debug\Newtonsoft.Json.dll
+C:\Unzipped\checkers-master\PerformanceTest\bin\Debug\Checkers.pdb
+C:\Unzipped\checkers-master\PerformanceTest\bin\Debug\Newtonsoft.Json.xml
+C:\Unzipped\checkers-master\PerformanceTest\obj\Debug\PerformanceTest.csprojResolveAssemblyReference.cache
+C:\Unzipped\checkers-master\PerformanceTest\obj\Debug\PerformanceTest.exe
+C:\Unzipped\checkers-master\PerformanceTest\obj\Debug\PerformanceTest.pdb

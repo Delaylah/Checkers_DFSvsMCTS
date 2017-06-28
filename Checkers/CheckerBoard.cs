@@ -36,6 +36,30 @@ namespace CheckersBoard
             board = initialBoard;
         }
 
+        public void Parse(string str, Player player)
+        {
+            this.NextPlayer = player;
+            var lines = str.Split('\n');
+
+            for (var r = 0; r < 8; r++)
+            {
+                for (var c = 0; c < 8; c++)
+                {
+                    var chr = lines[r][c];
+
+                    if (chr == 'E')
+                        board[r, c] = FieldState.Empty;
+                    else if (chr == 'R')
+                        board[r, c] = FieldState.Red;
+                    else if (chr == 'S')
+                        board[r, c] = FieldState.RedKing;
+                    else if (chr == 'B')
+                        board[r, c] = FieldState.Black;
+                    else if (chr == 'C')
+                        board[r, c] = FieldState.BlackKing;
+                }
+            }
+        }
 
 
         public bool SetState(int r, int c, FieldState state)
@@ -362,5 +386,44 @@ namespace CheckersBoard
         }
 
         #endregion
+
+        public override string ToString()
+        {
+            StringBuilder strBuilder = new StringBuilder();
+
+            for (var r = 0; r < 8; r++)
+            {
+                for (var c = 0; c < 8; c++)
+                {
+                    var state = GetState(r, c);
+                    switch (state)
+                    {
+                        case FieldState.Empty:
+                            strBuilder.Append("E");
+                            break;
+
+                        case FieldState.Red:
+                            strBuilder.Append("R");
+                            break;
+
+                        case FieldState.RedKing:
+                            strBuilder.Append("S");
+                            break;
+
+                        case FieldState.Black:
+                            strBuilder.Append("B");
+                            break;
+
+                        case FieldState.BlackKing:
+                            strBuilder.Append("C");
+                            break;
+                    }
+                }
+
+                strBuilder.AppendLine();
+            }
+
+            return strBuilder.ToString();
+        }
     }
 }

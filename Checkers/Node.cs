@@ -14,7 +14,9 @@ namespace CheckersBoard
         
         public string Name { get; set; }
 
-        //public Player Player { get; set; }
+        public bool IsEvaluated { get; set; }
+
+        public Player ParentPlayer { get; set; }
 
 
         public List<T> Children = new List<T>();
